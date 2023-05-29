@@ -1,143 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="keywords" content="html, css, tags, site">
-        <meta name="description" content="Мой первый сайт">
-        <title>Cours HTML</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Alexandr, Semikhvatskiy, cv, resume">
+    <meta name="description" content="Это сайт Александра Семихватского">
+    <title>SemikhvatskiyAlex</title>
+    <link rel="stylesheet" href="styles.css">
 
-    <body>
-        <img src="imgs/фотоя.jpg" width="150" alt="мое фото">
-        <hr color="red" size="10" width="800">
+</head>
+<body>
+    <div class="contaner"> 
 
-        <h1>
-            <center>Александр Семихватский</center>
-        </h1>
-
-        <!--
-        <h2>
-            <center>
-                Heading 2
-            </center>
-        </h2>
+        <div class="info">
+            <!-- мое фото на сайте -->
         
-        <h3> 
-            <center>
-                Heading 3
-            </center>
-        </h3>
-
-        <h4>
-            <center> 
-                Heading 4
-            </center>
-        </h4>
-    -->
-
+            <img src="sasha.jpg" alt="foto My" class="avatar">
         
+            <div class="info-text">
+                 <!-- Моя инфа -->
+                 <h1> Александр Семихватский</h1>
+                     <p>Я начинающий <strong>создатель сайтов. Обучаюсь на платформе Result School.</strong><em>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis fugiat eaque asperiores pariatur quo quia? Eligendi,</em> maiores. Reprehenderit, quisquam.
+                      </p>
+                      <p>Увлекаюсь игровыми видами спорта<strong>( хоккей, футбол).</strong>
+                         А так же увлекаюсь созданием своего сайта-резюме
+                     </p>
+                     <h4>Список социальных сетей</h4>
+                     <a href="http://" target="_blank" class="slka">WhatsApp</a>
+                      |
+                      <a href="http://" target="_blank" class="slka">Telegram</a>
+                      |
+                      <a href="mailto:" target="_blank" class="slka">E-mail</a>
+        
+            </div>
+         </div>
+            <div class="card bg-yellow" >
+                
+                <h2>Мои хобби</h2>
+                   
+                    <ol class="list">
+                        
+                        <li>Шахматы 1</li>
+                        <li>Хоккей 2</li>
+                        <li>Футбол 3</li>
+                        <li>Верстка сайтов 4</li>
+                    </ol>
+            </div>
+        
+            <div class="card bg-red">
+                        <h2>Опыт работы</h2>
 
-        <p>Я обучаюсь основам создания сайтов на курсе <strong>HTML & CSS − это первый шаг,
-            <em>чтобы стать IT-разработчиком </em> 
-            </strong>
+                        <table class="table">
+                            <!-- <thead>
+                                <tr>
+                                    <th>Название организации</th>
+                                    <th>Должность</th>
+                                    <th>Период работы</th>
+                                </tr>
+                            </thead> -->
+                            
+                            <tbody>
+                                <tr>
+                                    <td>МБ Беляево</td>
+                                    <td>Механик</td>
+                                    <td>2013 - 2019</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>МБ Измайлово</td>
+                                    <td>Механик</td>
+                                    <td>2021 - 2022</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>ГУП Мосгортранс</td>
+                                    <td>Водитель</td>
+                                    <td>2023 - н/в</td>
+                                    
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+            </div>
+        <!-- <div class="card"> -->
+        
+                        
+                        
+                        <form class="form">
+                            <h2>Связаться со мной</h2>
 
-            <em> <br>
-           Увлекаюсь шахматами, а так же спортивными играми (хоккей, футбол)
-             </em>
-        </p>
+                            <!-- имя и почта в одной группе -->
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя :</label>
+                                <input type="text" id="name" placeholder="введите Ваше имя">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="email">Ваш Email :</label>
+                                <input type="email" id="email" placeholder="введите Вашу почту">
+                            </div>
+
+                        </div>    
+        
+                        
+                        <div class="form-group">
+                              <label for="message">Сообщение :</label>
+                              <textarea id="message" cols="30" rows="5" placeholder="введите Ваше сообщение ..."></textarea>
+                        </div>
+        
+                        <!-- кнопка отправки формы -->
+        
+                            <input type="submit" class="btn" value="Отправить форму !">
+        
+                        </form>
+            <!-- </div> -->
+          
             
-        <p><em><strong>Я буду создателем сайтов !
 
-        </strong></em></p>
+    </div>
 
-        <h2>МОИ ХОББИ</h2>
-
-        <ul>
-            <li>ХОККЕЙ</li>
-            <li>ФУТБОЛ</li>
-            <li>ШАХМАТЫ</li>
-            <li>СОЗДАНИЕ САЙТОВ</li>
-            <li>НИЧЕГО НЕ ДЕЛАТЬ</li>
-        </ul>
-
-        
-    <hr color="red" size="10" width="800">
-
-    <h4>
-        <center> 
-            Список социальных сетей :
-        </center>
-    </h4>
-    <a href="https://t.me/smalek2003" target="_blank"> Telegramm</a>
-    |
-    <a href="https://api.whatsapp.com/send?phone=79636494433" target="_blank"> WhatsApp</a>
-
-
-    <hr>
-
-    <h1>Семья</h1>
-    <table>
-        <thead>
-            <tr>
-                 <th>ИМЯ</th>
-                  <th>ВОЗРАСТ</th>
-                 <th>РАБОТА</th>
-             </tr>
-        </thead>
-        <tbody>
-             <TR>
-                 <TD>Александр</TD>
-                 <TD> 55 </TD>
-                 <TD> Водитель</TD>
-    
-             </TR>
-    
-             <TR>
-                  <TD>Лариса</TD>
-                  <TD> 55 </TD>
-                  <TD> Учитель</TD>
-    
-                 </TR>
-              <TR>
-                 <TD>Иван </Td>
-                 <TD> 33 </TD>
-                 <TD> Служащий</TD>
-
-             </TR>
-
-
-        </tbody>
-    </table>
-
-    <h1>
-        Связаться со мной
-    </h1>
-    <form >
-        <div>
-            <label for="name">Ваше имя</label>
-            <br>
-            <input type="text" id="name" placeholder="Введите Ваше имя">
-      </div>
-
-      <div>
-           <label for="email">Ваша почта</label>
-           <br>
-           <input type="email" id="email" placeholder="Введите email">
-      </div>
-
-      <div>
-        <label for="message"> Сообщение</label>
-        <br>
-        <textarea id="message" placeholder="Введите сообщение..."></textarea>
-         
-      </div>
-
-      <button type="submit">ОТПРАВИТЬ!!!</button>
-    </form>
-    <br>
-    <br>
-    <br>
-
-
-    </body>
-
+ 
+</body>
 </html>
